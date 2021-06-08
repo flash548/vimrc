@@ -10,6 +10,9 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set hidden
+set re=2
+set ttyfast
+set lazyredraw 
 
 " Set up vertical vs block cursor for insert/normal mode
 if &term =~ "screen.*"
@@ -55,15 +58,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
+"Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'preservim/nerdcommenter'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+"let g:airline_powerline_fonts = 1
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
