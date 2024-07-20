@@ -4,6 +4,7 @@ set backspace=indent,eol,start
 set nu
 set ts=4
 set sts=4
+set clipboard=unnamed
 set smartindent
 set autoindent
 set tabstop=4
